@@ -1,10 +1,10 @@
 PODS:
-  - CocoaLumberjack (1.7.0):
-    - CocoaLumberjack/Core (= 1.7.0)
-    - CocoaLumberjack/Extensions (= 1.7.0)
-  - CocoaLumberjack/Core (1.7.0)
-  - CocoaLumberjack/Extensions (1.7.0):
-    - CocoaLumberjack/Core
+  - CocoaLumberjack (3.0.0):
+    - CocoaLumberjack/Default (= 3.0.0)
+    - CocoaLumberjack/Extensions (= 3.0.0)
+  - CocoaLumberjack/Default (3.0.0)
+  - CocoaLumberjack/Extensions (3.0.0):
+    - CocoaLumberjack/Default
   - DTCoreText (1.6.16):
     - DTFoundation/Core (~> 1.7.5)
     - DTFoundation/DTAnimatedGIF (~> 1.7.5)
@@ -22,15 +22,24 @@ PODS:
   - Specta (0.2.1)
 
 DEPENDENCIES:
-  - CocoaLumberjack (~> 1.7.0)
+  - CocoaLumberjack (from `https://github.com/jaelsonwagner/CocoaLumberjack.git`)
   - DTCoreText (~> 1.6.16)
   - Expecta (~> 0.3.1)
   - OCMock (~> 2.2.1)
   - Reachability (~> 3.1.1)
   - Specta (~> 0.2.1)
 
+EXTERNAL SOURCES:
+  CocoaLumberjack:
+    :git: https://github.com/jaelsonwagner/CocoaLumberjack.git
+
+CHECKOUT OPTIONS:
+  CocoaLumberjack:
+    :commit: d1b9677bafdeef38e4fc2cb4dbf9abd29d9518fa
+    :git: https://github.com/jaelsonwagner/CocoaLumberjack.git
+
 SPEC CHECKSUMS:
-  CocoaLumberjack: a2213b8410917a1a5ecfc5c63a4206edc24d3a5b
+  CocoaLumberjack: ceb6e03d1014f6c2022c298bf98db627d8ff2fb5
   DTCoreText: 934a16fe9ffdd169c96261721b39dc312b75713d
   DTFoundation: 46e2b2fafe78d67febfd8d1f85fe9845a093f00e
   Expecta: a354d4633409dd9fe8c4f5ff5130426adbe31628
@@ -38,6 +47,6 @@ SPEC CHECKSUMS:
   Reachability: dd9aa4fb6667b9f787690a74f53cb7634ce99893
   Specta: 15a276a6343867b426d5ed135d5aa4d04123a573
 
-PODFILE CHECKSUM: 855bb3ed515ace10125c4ca9049e44283db88515
+PODFILE CHECKSUM: 637055b52b31028c1752e6dedc88ffd6b51afb56
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.1
